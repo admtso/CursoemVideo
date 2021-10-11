@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+    background: rgb(68,125,199);
+    color: white;
+    font: normal 16pt Arial;
+    }
+    </style>
+</head>
+<body>
+<h1>Iniciando os estudos DOM</h1>
+<P>Aqui vai o resultado</P>
+<p>Aprendendo a usar o <strong>DOM</strong>em JavaScript.</p>
+<div id="msg">Clique em mim</div>
+<div>Clique em mim</div>
+<div id = "msg">Clique em mim</div>
+<script>
+</script>
+<script>
+//var id = window.document.getElementsById('msg')
+var d = window.document.getElementsById('msg')
+d.style.backgrond = 'green'
+d.innerText = 'Estou aguardando...'
+//Document Objet Model
+//Árvore Dom
+//Manipulando DOM
+//Entendendo o DOM
+//==================================
+window.document.write('')
+//==================================
+//*por Marca
+//getElementByTagName()
+//*por ID
+getElementById()
+//*por Nome
+getElementByName()
+//Muito usado quando se tem mais de um elemento
+//*por Classe
+getElementByClassName()
+//*por Seletor
+querySelector()
+querySelectorAll()
+//=================================
+//var corpo = window.document.body
+//corpo.style.background = 'black'
+var p1=window.document.getElementsByTagName('p')[1]
+window.document.write('Esta escrito assim: ' + p1.innerText)
+p1.style.color = 'blue'
+//window.alert(p1.innerText)
+//====================================//
+</script>
+</body>
+</html>
