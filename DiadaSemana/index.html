@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    input{
+    text-align: center;
+    }
+
+    </style>
+</head>
+
+<body>
+    <h1>Teste de nacionalidade</h1>
+    Digite um Número de 1 a 6 :<input type="number" id="verificador" />
+    <input type="button" value="Digite um Número de 1 a 6" onclick="verificar()" />
+    <div id="nacionalidade">Dia da Semana : </div>
+
+
+    <script>
+
+        var verificador = window.document.getElementById('verificador');
+        var nacionalidade = window.document.getElementById('nacionalidade');
+
+        function verificar() {
+
+            if (verificador.valueAsNumber == '0') {
+                nacionalidade.innerText = 'Segunda-Feira';
+            } else if (verificador.valueAsNumber == '1') {
+                nacionalidade.innerText = 'Terça-Feira';
+            } else if (verificador.valueAsNumber == '2') {
+                nacionalidade.innerText = 'Quarta-Feira';
+            } else if (verificador.valueAsNumber == '3') {
+                nacionalidade.innerText = 'Quinta-Feira';
+            } else if (verificador.valueAsNumber == '4') {
+                nacionalidade.innerText = 'Sexta-Feira';
+            } else if (verificador.valueAsNumber == '5') {
+                nacionalidade.innerText = 'Sábado';
+            } else if (verificador.valueAsNumber == '6') {
+                nacionalidade.innerText = 'Domingo';          
+            }else{
+                nacionalidade.innerText = '[ERRO]..Número Invalido'
+            }
+            
+        }
+
+    </script>
+
+</body>
+
+</html>
